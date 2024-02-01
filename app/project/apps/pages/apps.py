@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class NavigationConfig(AppConfig):
+class PagesConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'apps.navigation'
+    name = 'apps.pages'

@@ -632,7 +632,7 @@ ul.art-hmenu>li:before
    left:  -9px;
    width:9px;
    height: 24px;
-   background: url('images/menuseparator.png') center center no-repeat;
+   background: url('../img/menuseparator.png.js') center center no-repeat;
 }
 ul.art-hmenu>li:first-child:before{
    display:none;
@@ -744,7 +744,7 @@ ul.art-hmenu ul
    z-index: 10;
    left: 0;
    top: 0;
-   background-image: url('images/spacer.gif');
+   background-image: url('../img/spacer.gif');
 }
 
 .desktop ul.art-hmenu>li>ul
@@ -943,7 +943,7 @@ div.art-block img
 }
 .art-block ul>li:before
 {
-   content:url('images/blockbullets.png');
+   content:url('../img/blockbullets.png');
    margin-right:6px;
    bottom: 2px;
    position:relative;
@@ -1178,7 +1178,7 @@ form.art-search input[type="submit"], input.art-search-button, a.art-search-butt
    left:auto;
    display:block;
    border:none;
-   background:url('images/searchicon.png') center center no-repeat;
+   background:url('../img/searchicon.png') center center no-repeat;
    width:24px;
    height: 100%;
    padding:0;
@@ -1368,7 +1368,7 @@ label.art-radiobutton input[type="radio"]
 
 label.art-radiobutton.art-checked:after
 {
-   content: url('images/radiobuttonicon.png');
+   content: url('../img/radiobuttonicon.png');
    position: absolute;
    line-height: 12px;
    left: 0;
@@ -1382,7 +1382,7 @@ label.art-checkbox input[type="checkbox"]
 
 label.art-checkbox.art-checked:after
 {
-   content: url('images/checkboxicon.png');
+   content: url('../img/checkboxicon.png');
    position: absolute;
    left: 0;
    top: 0;
@@ -1815,7 +1815,7 @@ pre
 
 .art-postdateicon:before
 {
-   content:url('images/postdateicon.png');
+   content:url('../img/postdateicon.png');
    margin-right:6px;
    position:relative;
    display:inline-block;
@@ -1832,7 +1832,7 @@ pre
 
 .art-postauthoricon:before
 {
-   content:url('images/postauthoricon.png');
+   content:url('../img/postauthoricon.png');
    margin-right:6px;
    position:relative;
    display:inline-block;
@@ -1849,7 +1849,7 @@ pre
 
 .art-postediticon:before
 {
-   content:url('images/postediticon.png');
+   content:url('../img/postediticon.png');
    margin-right:6px;
    bottom: 2px;
    position:relative;
@@ -1866,7 +1866,7 @@ pre
 
 .art-postcontent ul>li:before,  .art-post ul>li:before,  .art-textblock ul>li:before
 {
-   content:url('images/postbullets.png');
+   content:url('../img/postbullets.png');
    margin-right:10px;
    bottom: 2px;
    position:relative;
@@ -1933,7 +1933,7 @@ pre
 
 blockquote
 {
-   background: #EFF2F5 url('images/postquote.png') no-repeat scroll;
+   background: #EFF2F5 url('../img/postquote.png') no-repeat scroll;
    padding:10px 10px 10px 47px;
    margin:10px 0 0 25px;
    color: #0D1216;
@@ -2118,7 +2118,7 @@ blockquote p,
 
 .art-rss-tag-icon
 {
-   background:  url('images/footerrssicon.png') no-repeat scroll;
+   background:  url('../img/footerrssicon.png') no-repeat scroll;
    margin:0 auto;
    min-height:32px;
    min-width:32px;
@@ -2135,7 +2135,7 @@ blockquote p,
 
 .art-facebook-tag-icon
 {
-   background:  url('images/footerfacebookicon.png') no-repeat scroll;
+   background:  url('../img/footerfacebookicon.png') no-repeat scroll;
    margin:0 auto;
    min-height:32px;
    min-width:32px;
@@ -2152,7 +2152,7 @@ blockquote p,
 
 .art-twitter-tag-icon
 {
-   background:  url('images/footertwittericon.png') no-repeat scroll;
+   background:  url('../img/footertwittericon.png') no-repeat scroll;
    margin:0 auto;
    min-height:32px;
    min-width:32px;
@@ -2169,7 +2169,7 @@ blockquote p,
 
 .art-tumblr-tag-icon
 {
-   background:  url('images/tumblricon.png') no-repeat scroll;
+   background:  url('../img/tumblricon.png') no-repeat scroll;
    margin:0 auto;
    min-height:32px;
    min-width:32px;
@@ -2186,7 +2186,7 @@ blockquote p,
 
 .art-pinterest-tag-icon
 {
-   background:  url('images/pinteresticon.png') no-repeat scroll;
+   background:  url('../img/pinteresticon.png') no-repeat scroll;
    margin:0 auto;
    min-height:32px;
    min-width:32px;
@@ -2203,7 +2203,7 @@ blockquote p,
 
 .art-vimeo-tag-icon
 {
-   background:  url('images/vimeoicon.png') no-repeat scroll;
+   background:  url('../img/vimeoicon.png') no-repeat scroll;
    margin:0 auto;
    min-height:32px;
    min-width:32px;
@@ -2220,7 +2220,7 @@ blockquote p,
 
 .art-youtube-tag-icon
 {
-   background:  url('images/youtubeicon.png') no-repeat scroll;
+   background:  url('../img/youtubeicon.png') no-repeat scroll;
    margin:0 auto;
    min-height:32px;
    min-width:32px;
@@ -2237,7 +2237,7 @@ blockquote p,
 
 .art-linkedin-tag-icon
 {
-   background:  url('images/linkedinicon.png') no-repeat scroll;
+   background:  url('../img/linkedinicon.png') no-repeat scroll;
    margin:0 auto;
    min-height:32px;
    min-width:32px;
@@ -2254,7 +2254,7 @@ blockquote p,
 
 .art-footer ul>li:before
 {
-   content:url('images/footerbullets.png');
+   content:url('../img/footerbullets.png');
    margin-right:6px;
    bottom: 2px;
    position:relative;
@@ -2363,7 +2363,7 @@ blockquote p,
 
 .art-lightbox-wrapper .loading
 {
-   background: #fff url('images/preloader-01.gif') center center no-repeat;
+   background: #fff url('../img/preloader-01.gif') center center no-repeat;
    border: 1px solid #b4b4b4;
    border-radius: 10px;
    box-shadow: 0 2px 5px #333;

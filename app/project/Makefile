@@ -38,6 +38,7 @@ help:
 	@echo -e "$(WARN_COLOR)- make migrate			        : Make migrations"
 	@echo -e "$(WARN_COLOR)- make req				: Install pip requirements"
 	@echo -e "$(WARN_COLOR)- make root				: Create superuser"
+	@echo -e "$(WARN_COLOR)- make static				: Collect static"
 	@echo -e "$(WARN_COLOR)- make venv				: Create virtual environment"
 	@echo -e "$(WARN_COLOR)- make vexit				: Exit from virtual environment"
 	@echo -e "$(WARN_COLOR)- make clean				: Remove venv configuration$(NO_COLOR)"
@@ -78,6 +79,10 @@ req:
 root:
 	@printf "Create superuser for ${name}...\n"
 	@python manage.py createsuperuser
+
+static:
+	@printf "Collect static ${name}...\n"
+	@python manage.py collectstatic
 
 vexit:
 	@echo -e "$(WARN_COLOR)For deactivate environment $(NO_COLOR)"

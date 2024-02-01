@@ -313,7 +313,7 @@ var processElementMultiplyBg = (function ($) {
             var bgimage = $.trim(bgimages[i]);
             if (bgimage === "")
                 continue;
-            var imgIdx = bgimage.lastIndexOf('images/');
+            var imgIdx = bgimage.lastIndexOf('img/');
             var className = bgimage.substring(imgIdx + 7, bgimage.length - 6);
             el.append("<div class=\"ie8fix " + className + "\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;background:" + bgimage.replace(/(images\/[^\/]+)$/, path + '$1') + " " + bgpositions[i] + " no-repeat\"></div>");
         }
@@ -1413,7 +1413,7 @@ var headerObjectResizer = {
                 if (height === 0) height = slide.parent().height();
 
                 $.each(bgImage, function (idx, val) {
-                    var findImageIdx = val.lastIndexOf('images/');
+                    var findImageIdx = val.lastIndexOf('img/');
                     var findDotIdx = val.lastIndexOf('.');
                     if (findImageIdx === -1 || findDotIdx === -1) return;
 
