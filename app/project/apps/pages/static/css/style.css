@@ -30,6 +30,35 @@ h1, h2, h3, h4, h5, h6, p, a, ul, ol, li
    padding: 0;
 }
 
+.button {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #BBBBBB;
+  background-color: #f0f0f0;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  line-height: 1.5;
+  position: relative;
+  overflow: hidden;
+  padding-left: 40px;
+  background: url('../img/pinteresticon.png') no-repeat left center;
+  background-size: 32px;
+}
+
+.button .sub-text {
+  color: #999999;
+  font-size: 12px;
+  line-height: 1;
+  display: block;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+}
+
 /* Reset buttons border. It's important for input and button tags. 
  * border-collapse should be separate for shadow in IE. 
  */
@@ -2176,6 +2205,7 @@ blockquote p,
    display: inline-block;
    text-indent: 35px;
    background-position: left center;
+   position: clearfix;
    vertical-align: middle;
 }
 

@@ -1,24 +1,11 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 {% load static %}
-<head><!-- Created by Artisteer v4.3.0.60745 -->
-    <meta charset="utf-8">
-    <title>Расчёт</title>
-    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
-
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" media="screen">
-    <link rel="stylesheet" href="{% static 'css/style.responsive.css' %}" media="all">
-
-
-    <script src="{% static 'js/jquery.js' %}"></script>
-    <script src="{% static 'js/script.js' %}"></script>
-    <script src="{% static 'js/script.responsive.js' %}"></script>
-
-</head>
+{% include 'pages/header.html' %}
 
 <body>
     <div id="art-main">
-        {% include 'pages/menu.html' %}
+        {% include 'pages/menu1.html' %}
         <div class="art-sheet clearfix">
             <div class="art-layout-wrapper">
                 <div class="art-content-layout">
@@ -56,9 +43,10 @@
                             <div class="art-block clearfix">
                                 <div class="art-blockcontent">
                                     <p>&nbsp;<a href="" class="art-tumblr-tag-icon"
-                                            style="line-height: 32px; "></a>&nbsp;&nbsp;<a href=""
-                                            class="art-pinterest-tag-icon" style="line-height: 32px; ">Подгруппа (0)
-                                            (A-Z)</a>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<a href=""
+                                            style="line-height: 32px; "></a>&nbsp;&nbsp;<a href="" class="button">
+                                              Подгруппа (0) (A-Z)
+                                              <span class="sub-text">Дополнительная информация</span>
+                                            </a>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<a href=""
                                             class="art-pinterest-tag-icon" style="line-height: 32px; ">Категория
                                             розницы</a>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<a href=""
                                             class="art-pinterest-tag-icon" style="line-height: 32px; ">Сегмент (0)
@@ -137,23 +125,13 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                             </article>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <footer class="art-footer">
-            <div class="art-footer-inner">
-                <p><br></p>
-            </div>
-        </footer>
-
-    </div>
-
-
+{% include 'pages/footer.html' %}
+</div>
 </body>
-
 </html>
