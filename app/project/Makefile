@@ -59,17 +59,17 @@ help:
 
 install:
 	@printf "$(OK_COLOR)==== Launch pip install ====(NO_COLOR)\n"
-	@printf "$(OK_COLOR)==== Загрузка новой библиотеки ====$(NO_COLOR)\n"
+	@printf "$(OK_COLOR)==== Downloading a new library ====$(NO_COLOR)\n"
 	@$(eval args := $(words $(filter-out --,$(MAKECMDGOALS))))
 	@if [ "${args}" -eq 2 ]; then \
-		echo "$(OK_COLOR) Загружаю библиотеку ${APPNAME}$(NO_COLOR)\n"; \
+		echo "$(OK_COLOR) Downloading the library ${APPNAME}$(NO_COLOR)\n"; \
 		cd apps; \
 		$(PIP) install ${APPNAME}; \
 		cd ..; \
 	elif [ "${args}" -gt 2 ]; then \
-		echo "$(ERROR_COLOR)Имя библиотеки не должно содержать проблелов!$(NO_COLOR)\n"; \
+		echo "$(ERROR_COLOR)The library name must not contain spaces!$(NO_COLOR)\n"; \
 	else \
-		echo "$(ERROR_COLOR)Введите имя библиотеки!$(NO_COLOR)\n"; \
+		echo "$(ERROR_COLOR)Enter the library name!$(NO_COLOR)\n"; \
 	fi
 
 make:
