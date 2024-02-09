@@ -32,7 +32,7 @@ app:
 	fi
 
 freeze:
-	$(PIP) freeze
+	@$(PIP) freeze
 
 h:
 	@printf "$(OK_COLOR)==== Django help ====$(NO_COLOR)\n"
