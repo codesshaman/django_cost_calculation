@@ -32,11 +32,10 @@ app:
 	fi
 
 freeze:
-	@printf "$(OK_COLOR)==== Launch pip freeze ====(NO_COLOR)\n"
 	$(PIP) freeze
 
 h:
-	@printf "$(OK_COLOR)==== Django help ====(NO_COLOR)\n"
+	@printf "$(OK_COLOR)==== Django help ====$(NO_COLOR)\n"
 	$(PYTHON) manage.py -h
 
 help:
@@ -58,7 +57,7 @@ help:
 	@echo -e "$(WARN_COLOR)- make fclean				: Remove venv configuration$(NO_COLOR)"
 
 install:
-	@printf "$(OK_COLOR)==== Launch pip install ====(NO_COLOR)\n"
+	@printf "$(OK_COLOR)==== Launch pip install ====$(NO_COLOR)\n"
 	@printf "$(OK_COLOR)==== Downloading a new library ====$(NO_COLOR)\n"
 	@$(eval args := $(words $(filter-out --,$(MAKECMDGOALS))))
 	@if [ "${args}" -eq 2 ]; then \
@@ -73,15 +72,15 @@ install:
 	fi
 
 make:
-	@printf "$(OK_COLOR)==== Make makemigrations ${name} ====(NO_COLOR)\n"
+	@printf "$(OK_COLOR)==== Make makemigrations ${name} ====$(NO_COLOR)\n"
 	$(PYTHON) manage.py makemigrations
 
 migrate:
-	@printf "$(OK_COLOR)==== Launch configuration ${name} ====(NO_COLOR)\n"
+	@printf "$(OK_COLOR)==== Launch configuration ${name} ====$(NO_COLOR)\n"
 	$(PYTHON) manage.py migrate
 
 req:
-	@printf "$(OK_COLOR)==== Install python requirements ====(NO_COLOR)\n"
+	@printf "$(OK_COLOR)==== Install python requirements ====$(NO_COLOR)\n"
 	@if [ -d "${VENV}" ]; then \
 		$(PIP) install -r ../requirements.txt; \
 	else \
@@ -91,19 +90,19 @@ req:
 	fi
 
 root:
-	@printf "$(OK_COLOR)==== Create superuser for ${name} ====(NO_COLOR)\n"
+	@printf "$(OK_COLOR)==== Create superuser for ${name} ====$(NO_COLOR)\n"
 	$(PYTHON) manage.py createsuperuser
 
 run:
-	@printf "$(OK_COLOR)==== Run ${name} ====(NO_COLOR)\n"
+	@printf "$(OK_COLOR)==== Run ${name} ====$(NO_COLOR)\n"
 	$(PYTHON) manage.py runserver
 
 static:
-	@printf "$(OK_COLOR)==== Collect static ${name} ====(NO_COLOR)\n"
+	@printf "$(OK_COLOR)==== Collect static ${name} ====$(NO_COLOR)\n"
 	$(PYTHON) manage.py collectstatic
 
 venv:
-	@printf "$(OK_COLOR)==== Launch virtual environment for ${name} ====(NO_COLOR)\n"
+	@printf "$(OK_COLOR)==== Launch virtual environment for ${name} ====$(NO_COLOR)\n"
 	@if [ ! -d "${VENV}" ]; then \
         echo "Creating virtual environment..."; \
         python3 -m venv ${VENV}; \
