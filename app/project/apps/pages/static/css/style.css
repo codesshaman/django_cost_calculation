@@ -59,6 +59,35 @@ h1, h2, h3, h4, h5, h6, p, a, ul, ol, li
   padding: 5px;
 }
 
+.top_button {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 2px;
+  border: 1px solid #BBBBBB;
+  background-color: #f0f0f0;
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+  line-height: 1.5;
+  position: relative;
+  overflow: hidden;
+  padding-left: 40px;
+  background: url('../img/footerfacebookicon.png') no-repeat left center;
+  background-size: 32px;
+}
+
+.top_button .sub-text {
+  color: #999999;
+  font-size: 11px;
+  line-height: 1;
+  display: block;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+}
+
 /* Reset buttons border. It's important for input and button tags. 
  * border-collapse should be separate for shadow in IE. 
  */
@@ -2155,6 +2184,11 @@ blockquote p,
    text-indent: 35px;
    background-position: left center;
    vertical-align: middle;
+   margin-right: auto;
+   margin-left: auto;
+   text-decoration: none;
+   color: rgb(250, 87, 5);
+   line-height: 32px;
 }
 
 .art-rss-tag-icon:empty
@@ -2172,6 +2206,11 @@ blockquote p,
    text-indent: 35px;
    background-position: left center;
    vertical-align: middle;
+   margin-right: auto;
+   margin-left: auto;
+   text-decoration: none;
+   color: rgb(250, 87, 5);
+   line-height: 32px;
 }
 
 .art-facebook-tag-icon:empty
@@ -2189,6 +2228,12 @@ blockquote p,
    text-indent: 35px;
    background-position: left center;
    vertical-align: middle;
+   margin-top: -20px;
+   margin-right: auto;
+   margin-left: auto;
+   text-decoration: none;
+   color: rgb(250, 87, 5);
+   line-height: 32px;
 }
 
 .art-twitter-tag-icon:empty

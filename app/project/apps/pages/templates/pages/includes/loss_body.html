@@ -1,0 +1,27 @@
+<div id="art-main">
+    {% include 'pages/includes/menu3.html' %}
+        <div class="art-sheet clearfix">
+            <div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <article class="art-post art-article">
+                                <h2 class="art-postheader">Вывод скидок и потерь</h2>
+                                <div class="art-postcontent art-postcontent-0 clearfix">
+                                    <div class="art-content-layout">
+                                        <div class="art-content-layout-row">
+                                            {% include 'pages/tables/loss_table.html' %}
+                                            <div class="art-layout-cell layout-item-1" style="width: 50%" >
+                                                <p><br></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% include 'pages/includes/footer.html' %}
+</div>
